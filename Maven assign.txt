@@ -1,0 +1,19 @@
+Shell scripts / batch files to list out all the mvn goals available.
+
+--> mvn help:describe -Dcmd=eclipse.
+
+shell scripts / batch files to demonstrate leveraging local copy of maven within the 
+project.
+
+--> mvn -Dmaven.repo.local=(Path of the file) clean install
+
+A README file contains information about other files in a directory or archive of computer software. A form of documentation, it is usually a simple plain text file called READ.ME
+
+shell scripts / batch files to extract & save the build logs to a file instead of console output 
+
+--> mvn dependency:tree -Dverbose -Dincludes=commons-collections -DoutputFile=(path with name of the file)
+
+shell scripts / batch files to prevent maven from downloading dependencies every time / 
+Make maven work without internet.
+
+--> mvn clean install -o
