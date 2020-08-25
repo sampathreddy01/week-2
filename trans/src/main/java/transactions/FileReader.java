@@ -14,7 +14,7 @@ public class FileReader{
 	        	if(i==0) i=i+1;
 	        	else
 	        	{
-	        	LogBook.detailLog(line);
+	        	Calculation.result(line);
 	            tempArr = line.split(delimiter);
 				System.out.println(Integer.parseInt(tempArr[0]));
 	            for(String tempStr : tempArr) {
