@@ -10,8 +10,10 @@ public class FileReader{
 		FileReader fr=new FileReader(file);
 		BufferedReader br=new BufferedReader(br);
 		String del=",";
+		int i=0;
 		while((line = br.readLine()) != null) {
-	        	if(i==0) i=i+1;
+	        	if(i==0) 
+			i=i+1;
 	        	else
 	        	{
 	        	Calculation.result(line);
